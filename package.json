@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "lerna": "^6.0.3"
+  },
+  "name": "monorepo",
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "lerna run start",
+    "test": "lerna run test",
+    "new-version": "lerna version --conventional-commits --yes",
+    "diff": "lerna diff"
+  }
+}
